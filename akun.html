@@ -30,96 +30,40 @@
             </div>  
         </div>
 
-<!--Singgle poduct details-->
-
-        <div class="small-con single-product">
+    <!--akun page-->
+     <div class="akun-page">
+        <div class="con">
             <div class="row">
                 <div class="col-2">
-                    <img src="img/products/kaos1.jpg" width="100%">
+                    <img src="img/papan iklan.png" width="100%">
                 </div>
 
-
-
                 <div class="col-2">
-                    <p>Home/T-Shirt</p>
-                    <h1>T-Shirt Star By q</h1>
-                    <h4>Rp 40.000</h4>
-                    <select>
-                        <option> XXL</option>
-                        <option> XL</option>
-                        <option> Large </option>
-                        <option> Medium </option>
-                        <option> Small </option>
-                    </select>
-                    <input type="number" value="1">
-                    <a href="" class="btn">Add Cart</a>
-                    <h3>Product Details <i class="fa fa-indent"></i> </h3>
-                    <p>pakaian yang cocok digunakan untuk pergi keluar dengan motif bintang yang menarik.</p>
+                    <div class="form-con">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id= indicator>
+                        </div>
+
+                        <form id="loginform">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+
+                        <form id="regform">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-
-<!---Tittle-->
-<div class="small-con">
-    <div class="row row-2">
-        <h2>Related Products</h2>
-        <p>View More</p>
     </div>
-</div>
-<!--products-->
-     <div class="small-con">
-
-            <div class="row">
-                <div class="col-4">
-                    <img src="img/products/kemeja1" alt="">
-                    <h4>Kaos Polo Gambar M</h4>
-                    <div class="ratingfa">
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p>Rp 37.900</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/products/celana1.jpg" alt="">
-                    <h4>Kaos Polo Gambar M</h4>
-                    <div class="ratingfa">
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p>Rp 37.900</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/products/f95a754f94821a3a791cc8cc008a2e76.jpg_720x720q80.jpg_.webp" alt="">
-                    <h4>Kaos Polo Gambar M</h4>
-                    <div class="ratingfa">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p>Rp 37.900</p>
-                </div>
-                <div class="col-4">
-                    <img src="img/products/kaos1.jpg" alt="">
-                    <h4>Kaos Polo Gambar M</h4>
-                    <div class="ratingfa">
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div> 
-                    <p>Rp 37.900</p>
-                </div>
-            </div>
-     </div>  
  
     <!-- footer -->
   <div class="footer">
@@ -179,6 +123,25 @@
             }
         </script>
 
+        <script>
+            var loginform = document.getElementById("loginform");
+            var regform = document.getElementById("regform");
+            var indicator = document.getElementById("indicator");
+
+                function register(){
+                    regform.style.transform = "translateX(0px)";
+                    loginform.style.transform = "translateX(0px)";
+                    indicator.style.transform = "translateX(100px)";
+                }
+
+                function login(){
+                    regform.style.transform = "translateX(300px)";
+                    loginform.style.transform = "translateX(300px)";
+                    indicator.style.transform = "translateX(0px)";
+                }
+
+
+        </script>
 
 </body>
 </html>
