@@ -430,7 +430,7 @@ td{
 td input{
     width: 40px;
     height: 30px;
-    padding: 5px;
+    padding: 1px;
 }
 
 td a{
@@ -443,6 +443,20 @@ td img{
     margin-right: 10px;
 }
 
+td .tombol{
+    display: inline-block;
+    background: red;
+    color: #fff;
+    padding: 5px 9px;
+    margin-left: 60px;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+.tombol:hover{
+    background: darkred;
+}
+
 .total-price{
     display: flex;
     justify-content: flex-end;
@@ -451,16 +465,10 @@ td img{
 .total-price table{
     border-top: 3px solid red;
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
 }
 
-td:last-child{
-    text-align: right;
-}
 
-th:last-child{
-    text-align: right;
-}
 
 /* akun page */
 
