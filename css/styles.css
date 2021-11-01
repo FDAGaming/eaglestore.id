@@ -44,6 +44,7 @@ input:invalid{
 .btn-form-change{
   color:white;
   background: #ff6868;
+  text-align: center;
   font-weight: bold;
   border:none;
   border-radius:50px;
@@ -56,6 +57,7 @@ input:invalid{
 }
 .btn-form-pay{
   color:white;
+  text-align: center;
   background: #68a2ff;
   font-weight: bold;
   border:none;
