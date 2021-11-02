@@ -1,28 +1,16 @@
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentloaded', ready)
-}   else{
-    ready()
-}
 
-function ready() {
-    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
-    console.log(removeCartItemButtons)
-    for (var i = 0; i < removeCartItemButtons.length; i++) {
-        var button = removeCartItemButtons[i]
-        button.addEventListener('click', removeItem) 
-           
-    }
-}
 
-function removeItem(event) {
+var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+for (var i = 0; i < removeCartItemButtons.length; i++) {
+    var button = removeCartItemButtons[i]
+    button.addEventListener('click', function(event){
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
-    updateCartTotal()
+    updateCartTotal() 
+    }) 
 }
 
-
-
-
+   
 function updateCartTotal() {
     var cartItemCon = document.getElementsByClassName('row')[0]
     var cartRous = cartItemCon.getElementsByClassName('col-4')
@@ -31,9 +19,9 @@ function updateCartTotal() {
         var cartrow = cartRous[i]
         var priceElement = cartrow.getElementsByClassName('cart-price')[0]
         var quantityElement = cartrow.getElementsByClassName('cart-jumlah')[0]
-        var price = parseFloat(priceElement.innerText.replace('Rp',''))
+        var price = parseFloat(priceElement.innerText.replace('Rp ',''))
         var quantity = quantityElement.value
         total = total + (price * quantity)
     }
-    document.getElementsByClassName('total-jumlah')[0].innerText =  'Rp' + total
+    document.getElementsByClassName('total-jumlah')[0].innerText =  'Rp ' + total
 }
