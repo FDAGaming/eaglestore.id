@@ -604,9 +604,88 @@ section h3 {
 	margin:20px 0;
 }
 
+.head{
+    background-color:rgb(255, 174, 174) ;
+}
+
+.row2{
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.row2 img{
+    width: 150px;
+    border-radius: 100%;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.kol-2 h1{
+    padding-left: 15px;
+    padding-top: 30px;
+    color: white;
+}
+
+.kol-2 p{
+    padding-left: 10px;
+    
+}
+.row2 p{
+    justify-content: space-around;
+}
+
+.transaksi{
+    margin-top: 20px;
+}
+
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row3{
+    justify-content: space-between;
+    margin: 10px auto 50px;
+}
+
+.riwayat{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.data{
+    justify-content: space-between;
+    margin: 10px auto 50px;
+}
+.data .gambar{
+    margin-left: 30px;
+}
+
+.data .gambar1{
+    margin-left: -5px;
+}
 
 
+.data p{
+    margin-bottom: 20px;
+}
 
+.data .coins{
+    margin-left: 5px;
+}
+
+.data h4{
+    margin-right: 10px;
+}
+
+.data .h5{
+    margin-left: 20px;
+}
+
+.data .gambar4{
+    margin-left: 10px;
+}
 
 
 
@@ -636,5 +715,8 @@ section h3 {
 		float: none;
 		margin-bottom: 20px;
 	}
+    .row1{
+        text-align: center;
+    }
 }
 

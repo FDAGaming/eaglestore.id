@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="img/Logo red.png" size="32x32" type="image/x-icon">
+    <title>My Acconts - Eagle Store</title>
+</head>
+<body>
+        <div class="head">
+        <div class="con">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/Logo 1.png" width="200px" >        
+            </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="kontak.html">Contact</a></li>
+                        <li><a href="akun.html">Acconts</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="img/icon/outline_shopping_cart_black_24dp.png" width="30px" height="30px"></a>
+                <img src="img/icon/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>  
+        </div>
+
+        <!--profile-->
+        <div class="row2">
+            <div class="kol-2">
+                <img src="img/user.png" alt="">
+            </div>
+            <div class="kol-2">
+                <h1>My Acconts </h1>
+            </div>
+        </div>  
+        </div>
+
+    <div class="transaksi">
+        <div class="small-con">
+       <div class="row1 row3">
+           <h3>Shopping Transaction</h3>
+           <h4><a href="">View History</a></h4>
+       </div>
+       <div class="riwayat"> 
+           <div class="data">
+                <div class="gambar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                    <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+                    </svg>
+                </div>
+                    <p>not yet paid</p>
+            </div>
+            <div class="data">
+                <div class="gambar1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                      </svg>
+                </div>
+                    <p>sent</p>
+            </div>
+            <div class="data">
+                <div class="gambar2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                      </svg>
+                </div>
+                    <p>packed</p>
+            </div>
+            <div class="data">
+                <div class="gambar3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                        <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                        <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                      </svg>
+                </div>
+                    <p>rating</p>
+            </div>
+       </div>
+    </div>
+
+    <div class="transaksi">
+        <div class="small-con">
+       <div class="row1 row3">
+           <h3>My Wallet</h3>
+           <h4><a href="">View More</a></h4>
+       </div>
+       <div class="riwayat"> 
+           <div class="data">
+                <div class="gambar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-wallet" viewBox="0 0 16 16">
+                        <path d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5V3zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a1.99 1.99 0 0 1-1-.268zM1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1z"/>
+                 </svg>
+                </div>
+                    <h4>EagleMoney</h4>
+                    <h5 class="h5">Rp30.000</h5>
+            </div>
+            <div class="data">
+                <div class="gambar1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                        <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                      </svg>
+                </div>
+                    <h4>Coins</h4>
+                    <h5 class="coins">9999</h5>
+            </div>
+            <div class="data">
+                <div class="gambar4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                        <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
+                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"/>
+                      </svg>
+                </div>
+                    <h4 class="h4">EPayLater</h4>
+                    <h5></h5>
+            </div>
+            <div class="data">
+                <div class="gambar3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-ticket-perferated" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Zm3 .35v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z"/>
+                      </svg>
+                </div>
+                    <p>voucher</p>
+            </div>
+       </div>
+    </div>
+
+    
+</div>
+</div>
+
+
+       
+ 
+    <!-- footer -->
+  <div class="footer">
+     <div class="con">
+         <div class="row">
+             <div class="footer-col-1">
+                 <h3>Download Our App</h3>
+                 <p>Comming Soon</p>
+                 <div class="app-logo">
+                     <img src="img/brands/play.png">
+                      <img src="img/brands/apps.png">
+                  </div>
+             </div>
+             <div class="footer-col-2">
+                  <img src="img/Logo red.png">
+                  <p>Comming Soon</p>
+             </div>
+             <div class="footer-col-3">
+                 <h3>Useful Links</h3>
+                 <ul>
+                     <li>Coupons</li>
+                     <li>blog spots</li>
+                     <li>Return Policy</li>
+                     <li>Join Affiliate</li>
+                 </ul>
+              </div>
+              <div class="footer-col-4">
+                  <h3>Follow us</h3>
+                  <ul>
+                      <li>Facebook</li>
+                      <li>Twitter</li>
+                      <li>Instagram</li>
+                      <li>YouTube</li>
+                  </ul>
+               </div>
+         </div>
+         <hr>
+         <p class="copyright">Copyright 2021 - Eagle Store</p>
+     </div>
+  </div>
+ 
+     <!----js for toggle menu---->
+        <script>
+            var menuitems = document.getElementById("menuitems");
+    
+            menuitems.style.maxHeight = "0px";
+    
+            function menutoggle(){
+                if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    menuitems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+
+</body>
+</html>
