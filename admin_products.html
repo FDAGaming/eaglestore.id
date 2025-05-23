@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="img/Logo red.png" size="32x32" type="image/x-icon">
+    <title>Admin Kelola Produk - Eagle Store</title>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="img/Logo 1.png" alt="Eagle Store Logo" class="sidebar-logo">
+            <button class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="admin_dashboard.html" class="sidebar-item"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="admin_articles.html" class="sidebar-item"><i class="fas fa-file-alt"></i> Kelola Artikel</a></li>
+            <li><a href="admin_products.html" class="sidebar-item active"><i class="fas fa-box"></i> Kelola Produk</a></li>
+            <li><a href="admin_users.html" class="sidebar-item"><i class="fas fa-users"></i> Kelola Pengguna</a></li>
+            <li><a href="admin_transactions.html" class="sidebar-item"><i class="fas fa-shopping-cart"></i> Kelola Transaksi</a></li>
+            <li><a href="index.html" class="sidebar-item"><i class="fas fa-sign-out-alt"></i> Kembali ke Beranda</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="small-con">
+            <div class="header-section">
+                <h2 class="tittle">Kelola Produk</h2>
+                <a href="#" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Produk</a>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="admin-card">
+                        <img src="img/products/buy-1.jpg" alt="Kaos Puma Merah">
+                        <h4>Kaos Puma Merah</h4>
+                        <p>Harga: <span class="cart-price">Rp 40.000</span></p>
+                        <p>Stok: 50</p>
+                        <div class="action-btn">
+                            <a href="#" class="btn"><i class="fas fa-edit"></i> Edit</a>
+                            <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i> Hapus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="admin-card">
+                        <img src="img/products/buy-2.jpg" alt="Sepatu Hitam HRx">
+                        <h4>Sepatu Hitam HRx</h4>
+                        <p>Harga: <span class="cart-price">Rp 100.000</span></p>
+                        <p>Stok: 20</p>
+                        <div class="action-btn">
+                            <a href="#" class="btn"><i class="fas fa-edit"></i> Edit</a>
+                            <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i> Hapus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="admin-card">
+                        <img src="img/products/jamtangan2.jpg" alt="Jam Tangan SKMEI">
+                        <h4>Jam Tangan Hitam SKMEI</h4>
+                        <p>Harga: <span class="cart-price">Rp 300.000</span></p>
+                        <p>Stok: 10</p>
+                        <div class="action-btn">
+                            <a href="#" class="btn"><i class="fas fa-edit"></i> Edit</a>
+                            <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i> Hapus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="con">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Comming Soon</p>
+                    <div class="app-logo">
+                        <img src="img/brands/play.png">
+                        <img src="img/brands/apps.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/Logo red.png">
+                    <p>Comming Soon</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Spots</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Eagle Store</p>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/admin.js"></script>
+</body>
+</html>

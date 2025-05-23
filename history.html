@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="img/Logo red.png" size="32x32" type="image/x-icon">
+    <title>History - Eagle Store</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="con">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/Logo 1.png" width="200px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="archive.html">Articles</a></li>
+                    <li><a href="kontak.html">Contact</a></li>
+                    <li><a href="akun.html">Accounts</a></li>
+                    <li><a href="history.html" class="active">History</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="img/icon/outline_shopping_cart_black_24dp.png" width="30px" height="30px"></a>
+            <img src="img/icon/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- Riwayat Transaksi -->
+    <div class="small-con cart-page">
+        <h2 class="tittle">Riwayat Transaksi</h2>
+        <table>
+            <tr>
+                <th>ID Transaksi</th>
+                <th>Tanggal</th>
+                <th>Produk</th>
+                <th>Jumlah</th>
+                <th>Total</th>
+                <th>Status</th>
+            </tr>
+            <!-- Transaksi 1 -->
+            <tr>
+                <td>#001</td>
+                <td>15 Mei 2025</td>
+                <td>
+                    <div class="cart-info">
+                        <div>
+                            <p>Kemeja Lengan Panjang Polos</p>
+                        </div>
+                    </div>
+                </td>
+                <td>2</td>
+                <td><span class="cart-price">Rp 180.000</span></td>
+                <td><span class="status-success">Selesai</span></td>
+            </tr>
+            <!-- Transaksi 2 -->
+            <tr>
+                <td>#002</td>
+                <td>10 Mei 2025</td>
+                <td>
+                    <div class="cart-info">
+                        <div>
+                            <p>Celana Panjang Chino</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1</td>
+                <td><span class="cart-price">Rp 60.000</span></td>
+                <td><span class="status-pending">Menunggu Pembayaran</span></td>
+            </tr>
+            <!-- Transaksi 3 -->
+            <tr>
+                <td>#003</td>
+                <td>5 Mei 2025</td>
+                <td>
+                    <div class="cart-info">
+                        <div>
+                            <p>Jam Tangan Hitam SKMEI</p>
+                        </div>
+                    </div>
+                </td>
+                <td>1</td>
+                <td><span class="cart-price">Rp 300.000</span></td>
+                <td><span class="status-shipped">Dikirim</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="con">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Comming Soon</p>
+                    <div class="app-logo">
+                        <img src="img/brands/play.png">
+                        <img src="img/brands/apps.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/Logo red.png">
+                    <p>Comming Soon</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Spots</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Eagle Store</p>
+        </div>
+    </div>
+
+    <!-- JS for Toggle Menu -->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px";
+            } else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
